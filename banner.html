@@ -16,14 +16,14 @@
         height: 90vh;
         margin: 0;
       }
-      .container {
+      .ijovi__banner__container {
         position: relative;
         width: 300px;
         height: 250px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
       }
-      .wrapper {
+      .ijovi__banner__wrapper {
         display: block;
         position: absolute;
         top: 0;
@@ -40,45 +40,50 @@
         scrollbar-width: thin;
         scrollbar-color: purple lightgrey;
       }
-      .wrapper:hover {
+      .ijovi__banner__wrapper:hover {
         height: 500px;
         overflow-y: scroll;
         border: 1px solid #beaefd;
       }
-      .logo {
+      .ijovi__banner__logo {
         display: block;
       }
-      .info {
+      .ijovi__banner__info {
         padding: 5px;
       }
-      .info strong {
+      .ijovi__banner__info strong {
         display: block;
         margin-bottom: 5px;
       }
-      .wrapper::-webkit-scrollbar {
+      .ijovi__banner__wrapper::-webkit-scrollbar {
         width: 5px;
       }
 
-      .wrapper::-webkit-scrollbar-track {
+      .ijovi__banner__wrapper::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey;
         border-radius: 10px;
       }
 
-      .wrapper::-webkit-scrollbar-thumb {
+      .ijovi__banner__wrapper::-webkit-scrollbar-thumb {
         background: #d650ff;
         border-radius: 5px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <a id="link" class="wrapper" href="https://www.ijovi.com/" target="_blank">
+    <div class="ijovi__banner__container">
+      <a
+        id="ijovi__banner"
+        class="ijovi__banner__wrapper"
+        href="https://www.ijovi.com/"
+        target="_blank"
+      >
         <img
-          class="logo"
+          class="ijovi__banner__logo"
           src="https://i.ibb.co/8mBrrPw/banner.jpg"
           alt="ijovi healthcare communication"
         />
-        <p class="info">
+        <p class="ijovi__banner__info">
           <strong>OUR EXPERTISE:</strong> Our focus is on Healthcare Communication. We believe the
           heart of a brand strategy starts with the patient experience. Using our individual
           competencies and skills, coming from industry and academia, we leverage the synergies that
@@ -89,7 +94,7 @@
           providing us the holistic understanding of pharma and healthcare.
         </p>
 
-        <p class="info">
+        <p class="ijovi__banner__info">
           <strong>MARKETING & SALES EXCELLENCE:</strong> A good brand strategy enables you to
           identify and utilize your competitive advantage. Driving demand requires a strategy that
           is aligned with the specific market, but also operations that follow all the way through.
@@ -99,7 +104,7 @@
           promise and maximizes the value of your product.
         </p>
 
-        <p class="info">
+        <p class="ijovi__banner__info">
           <strong>INSIGHTS & STRATEGY:</strong> Today, the customers control what information and
           communication they want and set their expectations accordingly. Therefore, the marketing
           today must be centered on the needs and beliefs of the individual health care
@@ -108,7 +113,7 @@
           support you in creating the customer journey that generates a seamless brand experience.
         </p>
 
-        <p class="info">
+        <p class="ijovi__banner__info">
           <strong>DESIGN & COMMUNICATION:</strong> We help you to identify the most important
           information for your audience and create visual narratives that inspire your audiences to
           act. We have a deep understanding of medical aspects, and we understand the complexity of
@@ -118,7 +123,7 @@
           business goals. Our combined expertise makes us your ideal Design Partner.
         </p>
 
-        <p class="info">
+        <p class="ijovi__banner__info">
           <strong>MEDICAL AFFAIRS EXCELLENCE:</strong> We know the importance of adapting
           communication to your audience. Situations such as internal training and patient
           communication require the ability to make the complexity of medicine and research
@@ -133,8 +138,8 @@
     </div>
     <script>
       (function () {
-        const link = document.getElementById('link');
-        link.addEventListener('mouseleave', e => {
+        const banner = document.getElementById('ijovi__banner');
+        banner.addEventListener('mouseleave', e => {
           e.target.scroll({
             top: 0,
             behavior: 'smooth',
